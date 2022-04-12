@@ -1,7 +1,41 @@
 .App {
   text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.accordion {
+  width: 500px;
+}
+.item{
+  background-color: rgb(130, 203, 203);
+  margin-bottom: 5px;
+  padding: 10px 20px;
+}
+.title {
+  color: rgb(170, 14, 14);
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
+.content{
+  color:rgb(17, 17, 17);
+   overflow: hidden;
+   max-height: 0px;
+}
+
+.content.show{
+  color:rgb(17, 17, 17);
+   overflow: visible;
+   max-height: 500px;
+}
+.plus{
+  display: flex;
+  text-align: right;
+  align-content: flex-end;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,6 +61,7 @@
 .App-link {
   color: #61dafb;
 }
+
 
 @keyframes App-logo-spin {
   from {
